@@ -1,0 +1,21 @@
+name: Chapter or example suggestion
+description: Suggest a chapter topic or an additional learning example.
+title: "[Suggestion]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggestions should fit the project's deep-learning study scope. Please do not request reproduction of copyrighted book content.
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What should be added?
+      description: Describe the topic, example, or improvement.
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why would it be useful?
+    validations:
+      required: true

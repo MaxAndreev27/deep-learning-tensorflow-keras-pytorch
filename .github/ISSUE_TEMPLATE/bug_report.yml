@@ -1,0 +1,54 @@
+name: Bug report
+description: Report a reproducible problem in a chapter, notebook, or setup step.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search existing issues first. Do not include credentials or private data.
+  - type: input
+    id: chapter
+    attributes:
+      label: Chapter
+      description: Which numbered chapter directory is affected?
+      placeholder: 01_introduction_nn_dl
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Notebook or file
+      description: Include the notebook name and cell number, if applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the error message or unexpected behavior.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Run ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Python version, operating system, and relevant package versions.
+    validations:
+      required: false

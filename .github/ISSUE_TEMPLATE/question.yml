@@ -1,0 +1,30 @@
+name: Question
+description: Ask a question about a chapter or example.
+title: "[Question]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search existing issues first. Questions should be about the repository's learning materials.
+  - type: input
+    id: chapter
+    attributes:
+      label: Chapter
+      description: Which numbered chapter directory is your question about?
+      placeholder: 01_introduction_nn_dl
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Notebook or file
+      description: Include the notebook name and cell number, if applicable.
+    validations:
+      required: false
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: Include what you tried and where you got stuck.
+    validations:
+      required: true
