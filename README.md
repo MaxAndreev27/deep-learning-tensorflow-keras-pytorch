@@ -6,9 +6,9 @@ This project follows the topics in _Глубокое обучение с TensorF
 
 ## Chapters
 
-| Chapter                                                                          | Topics                                                                               |
-| -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| [01 - Introduction to Neural Networks and Deep Learning](01_introduction_nn_dl/) | Perceptron, multilayer perceptron, XOR, gradient descent, Momentum, RMSprop and Adam |
+| Chapter                                                                          | Topics                                                                                                                                                                                                                                                  |
+| -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [01 - Introduction to Neural Networks and Deep Learning](01_introduction_nn_dl/) | Perceptron, multilayer perceptron, XOR, gradient descent, Momentum, RMSprop, Adam, overfitting, underfitting, L1/L2 regularization, dropout, early stopping, and loss functions (MSE, binary/categorical cross-entropy, hinge, and custom Keras losses) |
 
 Chapters are organized as numbered directories in the repository root (`01_...`, `02_...`). Each chapter may include its own notebooks and `requirements.txt`.
 
