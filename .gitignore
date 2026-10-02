@@ -40,6 +40,7 @@ staticfiles/
 data/
 fashion_mnist_model/
 my_awesome_model/
+/02_dl_with_tensorflow/my_dir/
 
 # PKL files (models saved with joblib or pickle)
 *.pkl
