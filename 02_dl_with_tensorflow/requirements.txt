@@ -77,14 +77,16 @@ rich==15.0.0
 scikit-learn==1.9.1
 scipy==1.18.1
 seaborn==0.13.2
-setuptools==84.0.0
+setuptools==80.10.2
 simple-parsing==0.1.9
 six==1.17.0
 stack-data==0.6.3
 tensorflow==2.21.0
 tensorflow-datasets==4.9.10
+tensorflow-hub==0.16.1
 tensorflow-metadata==1.21.0
 termcolor==3.3.0
+tf_keras==2.21.0
 threadpoolctl==3.7.0
 toml==0.10.2
 tornado==6.5.10
