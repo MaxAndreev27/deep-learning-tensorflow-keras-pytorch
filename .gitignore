@@ -48,6 +48,9 @@ my_awesome_model/
 # Keras model files
 *.keras
 
+# Keras model weights
+*.weights.h5
+
 # PyTorch model files
 *.pt
 
