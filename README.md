@@ -6,17 +6,22 @@ This project follows the topics in _Глубокое обучение с TensorF
 
 ## Chapters
 
-| Chapter                                                                          | Topics                                                                                                                                                                                                                                                  |
-| -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [01 - Introduction to Neural Networks and Deep Learning](01_introduction_nn_dl/) | Perceptron, multilayer perceptron, XOR, gradient descent, Momentum, RMSprop, Adam, overfitting, underfitting, L1/L2 regularization, dropout, early stopping, and loss functions (MSE, binary/categorical cross-entropy, hinge, and custom Keras losses) |
+| Chapter | Notebook | Topics |
+| ------- | -------- | ------ |
+| [01 - Introduction to Neural Networks and Deep Learning](01_introduction_nn_dl/) | [perceptron_nn_dl.ipynb](01_introduction_nn_dl/perceptron_nn_dl.ipynb) | Perceptron, multilayer perceptron, XOR, gradient descent, Momentum, RMSprop, Adam, overfitting, underfitting, L1/L2 regularization, dropout, early stopping, and loss functions (MSE, binary/categorical cross-entropy, hinge, and custom Keras losses) |
+| [02 - Deep Learning with TensorFlow](02_dl_with_tensorflow/) | [tensorflow_examples.ipynb](02_dl_with_tensorflow/tensorflow_examples.ipynb) | Tensors and tensor operations, `tf.data` pipelines, simple networks on MNIST, learning rate scheduling, early stopping, dropout, KerasTuner, transfer learning and fine-tuning with MobileNetV2, KerasCV YOLOv8 object detection, text embeddings, and saving/loading models and checkpoints |
+| [03 - Deep Learning with Keras](03_dl_with_keras/) | [keras_examples.ipynb](03_dl_with_keras/keras_examples.ipynb) | Sequential and Functional APIs, compiling, training and evaluating models, multi-output models, shared layers, combining Sequential and Functional models, `ModelCheckpoint`, and `EarlyStopping` |
 
-Chapters are organized as numbered directories in the repository root (`01_...`, `02_...`). Each chapter may include its own notebooks and `requirements.txt`.
+Chapters are organized as numbered directories in the repository root (`01_...`, `02_...`, `03_...`). Each chapter has its own notebook, `requirements.txt`, and `.python-version`. Chapter 02 also uses an `images/` directory.
+
+Generated artifacts (`.venv/`, `*.keras`, `*.weights.h5`, and tuner output) are created locally when you run the notebooks and are excluded from version control.
 
 ## Getting Started
 
-The current chapter environment uses Python `3.13.13`.
+Each chapter pins its own dependencies and uses Python `3.13.13` (see the chapter's `.python-version`). Create a separate virtual environment inside the chapter you want to run, for example `03_dl_with_keras`:
 
 ```bash
+cd 03_dl_with_keras
 python -m venv .venv
 ```
 
@@ -25,16 +30,16 @@ Activate the environment, then install the chapter dependencies:
 ```bash
 # Linux or macOS
 source .venv/bin/activate
-python -m pip install -r 01_introduction_nn_dl/requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ```powershell
 # Windows PowerShell
 .venv\Scripts\Activate.ps1
-python -m pip install -r 01_introduction_nn_dl\requirements.txt
+python -m pip install -r requirements.txt
 ```
 
-Open a chapter notebook in VS Code and select `.venv` as its Python kernel. Later chapters may use different dependencies; install the requirements listed in the chapter you are running.
+Open the chapter notebook in VS Code and select the chapter's `.venv` as its Python kernel. Chapter 02 needs additional packages (such as KerasTuner and KerasCV), so always install the requirements of the chapter you are running.
 
 ## Contributing
 

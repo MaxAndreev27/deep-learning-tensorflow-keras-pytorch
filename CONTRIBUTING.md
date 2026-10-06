@@ -8,8 +8,10 @@ Search existing issues first. For substantial changes, open an issue to discuss 
 
 ## Chapter Structure
 
-- Keep chapter material in a numbered root directory such as `01_introduction_nn_dl/` or `02_.../`.
-- Keep chapter-specific dependencies in that chapter's `requirements.txt`.
+- Keep chapter material in a numbered root directory such as `01_introduction_nn_dl/`, `02_dl_with_tensorflow/`, or `03_dl_with_keras/`.
+- Keep chapter-specific dependencies in that chapter's `requirements.txt` and its Python version in `.python-version`.
+- Create the virtual environment inside the chapter directory. Do not commit `.venv/` or generated model files (`*.keras`, `*.weights.h5`).
+- Save Keras models in the native `.keras` format (use `.weights.h5` for weights only) instead of legacy `.h5`.
 - Prefer focused notebooks with explanatory Markdown and runnable code cells.
 - Use relative paths so notebooks work from the repository after cloning.
 

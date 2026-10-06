@@ -4,7 +4,7 @@
 
 ## Chapter and files
 
-- Chapter:
+- Chapter (`01_introduction_nn_dl`, `02_dl_with_tensorflow`, `03_dl_with_keras`, or repository-wide):
 - Notebooks or files:
 
 ## Verification

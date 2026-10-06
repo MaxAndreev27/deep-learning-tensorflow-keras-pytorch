@@ -6,12 +6,16 @@ body:
     attributes:
       value: |
         Please search existing issues first. Do not include credentials or private data.
-  - type: input
+  - type: dropdown
     id: chapter
     attributes:
       label: Chapter
       description: Which numbered chapter directory is affected?
-      placeholder: 01_introduction_nn_dl
+      options:
+        - 01_introduction_nn_dl
+        - 02_dl_with_tensorflow
+        - 03_dl_with_keras
+        - Repository-wide
     validations:
       required: true
   - type: input
