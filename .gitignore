@@ -53,6 +53,7 @@ my_awesome_model/
 
 # PyTorch model files
 *.pt
+*.pth
 
 # OS-specific files
 .DS_Store
