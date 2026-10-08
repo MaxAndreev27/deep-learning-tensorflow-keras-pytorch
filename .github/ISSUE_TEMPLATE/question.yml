@@ -15,6 +15,7 @@ body:
         - 01_introduction_nn_dl
         - 02_dl_with_tensorflow
         - 03_dl_with_keras
+        - 04_dl_with_pytorch
         - Repository-wide
     validations:
       required: true
