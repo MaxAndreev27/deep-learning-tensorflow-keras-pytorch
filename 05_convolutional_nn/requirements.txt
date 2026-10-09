@@ -41,6 +41,7 @@ six==1.17.0
 stack-data==0.6.3
 sympy==1.14.0
 torch==2.14.1+cpu
+torchvision==0.29.1+cpu
 tornado==6.5.10
 traitlets==5.16.1
 typing_extensions==4.16.0
