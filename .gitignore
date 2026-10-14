@@ -38,6 +38,7 @@ staticfiles/
 
 # Data and training artifacts in repository root
 data/
+07_advanced_dl_concepts/flower_photos/
 fashion_mnist_model/
 my_awesome_model/
 /02_dl_with_tensorflow/my_dir/
