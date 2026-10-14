@@ -14,10 +14,11 @@ This project follows the topics in _Глубокое обучение с TensorF
 | [04 - Deep Learning with PyTorch](04_dl_with_pytorch/) | [pytorch_examples.ipynb](04_dl_with_pytorch/pytorch_examples.ipynb) | Tensors and autograd, a simple computational graph, feedforward networks, training on MNIST, loading a pre-trained ResNet-18 for image classification, feature extraction, fine-tuning the last layers, training on CIFAR-10, and evaluating a fine-tuned model |
 | [05 - Convolutional Neural Networks](05_convolutional_nn/) | [convolutional_examples.ipynb](05_convolutional_nn/convolutional_examples.ipynb) | Convolution, pooling, ReLU, CNNs with TensorFlow, Keras, and PyTorch, and image classification with ResNet, Inception, DenseNet, and Faster R-CNN |
 | [06 - RNN and LSTM](06_rnn_lstm/) | [rnn_lstm_examples.ipynb](06_rnn_lstm/rnn_lstm_examples.ipynb) | RNN, LSTM, and GRU with PyTorch, TensorFlow, and Keras; language modeling, character-level text generation, sentiment analysis, self-attention, and Transformers |
+| [07 - Advanced Deep Learning Concepts](07_advanced_dl_concepts/) | [advanced_dl_examples.ipynb](07_advanced_dl_concepts/advanced_dl_examples.ipynb) | Autoencoders and variational autoencoders, GANs, transfer learning and fine-tuning, SimCLR contrastive learning, and BERT sentiment analysis |
 
-Chapters are organized as numbered directories in the repository root (`01_...` through `06_...`). Each chapter has its own notebook, `requirements.txt`, and `.python-version`. Chapters 02, 04, and 05 also use an `images/` directory.
+Chapters are organized as numbered directories in the repository root (`01_...` through `07_...`). Each chapter has its own notebook, `requirements.txt`, and `.python-version`. Chapters 02, 04, and 05 also use an `images/` directory.
 
-Generated artifacts (`.venv/`, `data/`, `*.keras`, `*.weights.h5`, `*.pth`, and tuner output) are created locally when you run the notebooks and are excluded from version control. Chapters 04 and 05 download datasets such as MNIST and CIFAR-10 into their local `data/` directories; Chapter 04 and some Chapter 05 examples also save trained PyTorch weights (`*.pth`) next to the notebook.
+Generated artifacts (`.venv/`, `data/`, `flower_photos/`, `*.keras`, `*.weights.h5`, `*.pth`, and tuner output) are created locally when you run the notebooks and are excluded from version control. Chapters 04, 05, and 07 download datasets such as MNIST and CIFAR-10 into their local `data/` directories; Chapter 07 also uses the `flower_photos/` dataset and downloads the pretrained `bert-base-uncased` checkpoint on first use. Chapter 04 and some Chapter 05 examples save trained PyTorch weights (`*.pth`) next to the notebook.
 
 ## Getting Started
 
@@ -44,7 +45,7 @@ python -m pip install -r requirements.txt
 
 Open the chapter notebook in VS Code and select the chapter's `.venv` as its Python kernel. Chapter 02 needs additional packages (such as KerasTuner and KerasCV), so always install the requirements of the chapter you are running.
 
-Chapters 04-06 pin CPU builds of PyTorch (`torch==...+cpu`; Chapter 04 and some Chapter 05 dependencies also include `torchvision==...+cpu`), which are not hosted on PyPI. Install the chapter dependencies with the PyTorch CPU package index:
+Chapters 04-07 pin CPU builds of PyTorch (`torch==...+cpu`; Chapters 04, 05, and 07 also include `torchvision==...+cpu`), which are not hosted on PyPI. Install the chapter dependencies with the PyTorch CPU package index:
 
 ```bash
 python -m pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
