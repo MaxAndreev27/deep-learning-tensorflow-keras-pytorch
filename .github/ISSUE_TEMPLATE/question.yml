@@ -19,6 +19,7 @@ body:
         - 05_convolutional_nn
         - 06_rnn_lstm
         - 07_advanced_dl_concepts
+        - 08_ml_in_cloud_and_edge
         - Repository-wide
     validations:
       required: true
